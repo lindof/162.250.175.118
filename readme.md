@@ -1,0 +1,1 @@
+The server's settings for [lindof.com](https://lindof.com) (Magento 2).
