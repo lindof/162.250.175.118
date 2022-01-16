@@ -1,2 +1,7 @@
 The server's settings for [lindof.com](https://lindof.com) (Magento 2).
-Red Hat 8.4.1-1.
+
+`cat /proc/version`
+> Red Hat 8.4.1-1.
+> 
+`cat /etc/redhat-release`
+> Rocky Linux release 8.4 (Green Obsidian)
