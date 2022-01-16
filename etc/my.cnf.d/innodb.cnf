@@ -1,3 +1,15 @@
 [mysqld]
 innodb_buffer_pool_chunk_size=546308096
 innodb_buffer_pool_size=546308096
+# 2022-01-16 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# 1) "«ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction» on `DELETE FROM mailchimp_errors;`":
+# https://github.com/lindof/site/issues/8
+# 2) https://stackoverflow.com/a/10704454
+# 3) «The length of time in seconds an InnoDB transaction waits for a row lock before giving up.
+# The default value is 50 seconds.
+# A transaction that tries to access a row that is locked by another InnoDB transaction
+# waits at most this many seconds for write access to the row before issuing the following error:
+# "ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction"»:
+# https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_lock_wait_timeout
+# 4) https://mariadb.com/docs/reference/mdb/system-variables/innodb_lock_wait_timeout
+innodb_lock_wait_timeout=6000
