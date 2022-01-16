@@ -1,0 +1,3 @@
+[mysqld]
+innodb_buffer_pool_size=546308096
+innodb_buffer_pool_chunk_size=546308096
