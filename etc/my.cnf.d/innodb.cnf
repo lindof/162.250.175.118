@@ -1,7 +1,7 @@
 [mysqld]
 innodb_buffer_pool_chunk_size=546308096
 innodb_buffer_pool_size=546308096
-# 2022-01-16 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# 2022-01-16 Dmitry Fedyuk https://github.com/dmitrii-fediuk
 # 1) "«ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction» on `DELETE FROM mailchimp_errors;`":
 # https://github.com/lindof/site/issues/8
 # 2) https://stackoverflow.com/a/10704454

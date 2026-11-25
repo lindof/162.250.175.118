@@ -5,7 +5,7 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-# 2022-01-15 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# 2022-01-15 Dmitry Fedyuk https://github.com/dmitrii-fediuk
 export PS1='\[\e[01;33m\]\w\n\[\e[38;5;028m\]\$ \[\e[00m\]'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
